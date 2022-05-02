@@ -34,11 +34,6 @@ class BookSearchResultAdapter: RecyclerView.Adapter<BookSearchResultAdapter.View
             author.text = book.volumeInfo?.authors?.firstOrNull()
             publishedDate.text = book.volumeInfo?.publishedDate
 
-//            Picasso.get()
-//                .load(book.volumeInfo?.imageLinks?.smallThumbnail)
-//                .placeholder(R.drawable.ic_launcher_background)
-//                .into(holder.binding.bookImg)
-
             if(book.volumeInfo?.imageLinks?.thumbnail != null) {
                 Glide.with(holder.itemView.context)
                     .load(book.volumeInfo.imageLinks.thumbnail)

@@ -49,7 +49,8 @@ class BookSearchResultViewModel: ViewModel() {
         }
     }
 
-    private fun validateInputText(authorString: String, keywordString: String): Boolean {
+
+    fun validateInputText(authorString: String, keywordString: String): Boolean {
         return !(authorString.isEmpty() || keywordString.isEmpty())
     }
 }
